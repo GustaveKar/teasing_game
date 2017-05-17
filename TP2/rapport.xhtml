@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Rapport_tp2</title>
+    </head>
+    <body>
+    <h1>Introduction</h1> 
+        <p> Dans ce deuxième TP, il s'agit de réaliser un jeu de tanquin en javascript, en utilisant le framework de jQuery.</p> <br/>
+    <h1>Réalisation du Travail</h1> 
+            <p>Dans la réalisation de notre travail, on a utilisé un canvas pour dessiner les images et un tableau pour sectionner l'image.<br/>
+                Au début du jeu, lorsque l'image est chargée et le nombre de lignes et colonnes specifié, on forme une grille par la fonction <br/><i>separer_image(.)</i> et on va afficher l'image dans cette grille par la fonction <i>dessiner_images(.)</i>. La dernière case <br/>
+                de la grille est  une case grise comme indiqué dans le sujet. <br/>
+                Lorsqu'on presse sur le boutton melanger, la fonction <i>melanger()</i> va brasser les cases et par la suite on ne pourra<br/>
+                 déplacer que les cases adjacentes à la case grise. Pour trouver les cases adjacentes à la case grise on utilise la fonction<br/>
+                  <i>trouver_case_deplacer()</i> et pour deplacer les cases on utilise la fonction <i>deplacer_case(.)</i>. Au fur et à mesure <br/>
+                  qu'on déplace les cases la fonction <i>verifier_position()</i> nous permet de vérifier si la position de départ (après l'affichage <br/>
+                  de l'image) est retrouvé pour valider si le jeu a été gagné. <br/>
+                  Cependant l'affichage des numeros de cases n'est pas fonctionnel, on n'a pas pu faire un overwrite sur les images présentes dans <br/>
+                  le tableau. L'utilisation du clavier pour déplacer les cases n'est pas completement fonctionnel aussi, en effet après quelques  <br/>
+                  deplacements il peut arriver que les déplacements ne repondent plus au click. <br/>
+
+            </p> <br/>
+            <h4> URL du Jeu :</h4> <a href="http://www-etud.iro.umontreal.ca/~karengeg/ift3225/tp2/jeu_Taquin.xhtml">Cliquer ici pour jouer au jeu</a> 
+    <h1>Conclusion</h1> 
+       <p>Ce TP nous a permis de revoir et manipuler le concept de tableau en javascript, d'utiliser le framework de jQuery et surtout de <br/>
+             se rendre compte à quel point ce dernier simplifie les choses. Parexemple pour avoir la case grise, on avait pensé à remplacer <br/>
+             l'image dans cette case par une autre image (une case grise), alors qu'il était simple juste d'ajouter un attribut "id" à cette <br/>
+             case et de changer cet id dans un CSS. <br/>
+         </p>
+    </body>
+</html>
